@@ -1,0 +1,135 @@
+<!--Importation des polices-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--HTML-->
+<div class='smd-sidebar'>
+    <p><i class='smd-menu-button material-icons'>menu</i>
+        <span class='smd-menu-title'>Insert Title Here</span></p>
+</div>
+
+<div class='smd-menu-fond'>
+</div>
+
+<div class='smd-menu'>
+    <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+    </ul>
+</div>
+
+
+
+<!--CSS-->
+<style>
+
+    :root {
+        --menubar-color: #212121;
+        --menubar-text-color: white;
+    }
+
+    @keyframes slide {
+        from {left : -300px;}
+        to {left: 0px;}
+    }
+
+    @keyframes unslide {
+        from {left : 0;}
+        to {left: -300px;}
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .smd-sidebar {
+        background-color: var(--menubar-color);
+        width: 100%;
+        height: 50px;
+        line-height: 1;
+        z-index: 99;
+    }
+
+    .smd-menu-button {
+        height: 24px;
+        padding: 13px;
+        display: inline-block;
+        color: var(--menubar-text-color);
+        cursor: pointer;
+
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+
+    }
+
+    .smd-menu-title {
+        color: var(--menubar-text-color);
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+        text-align: center;
+        display: inline-block;
+        margin-left: 2%;
+    }
+
+    .smd-menu {
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        z-index: 100;
+        
+    }
+
+    .smd-menu-fond {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(129, 126, 122, 0.47);
+        display: none;
+        z-index: 98;
+    }
+
+    .smd-menu ul {
+        list-style-type: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+    }
+
+    .smd-slide {
+        animation: slide 1s 1 forwards;
+    }
+
+    .smd-unslide {
+        animation: unslide 1s 1 forwards;
+    }
+
+</style>
+
+<script>
+
+var menuButton = document.getElementsByClassName('smd-menu-button'),
+    menu = document.getElementsByClassName('smd-menu'),
+    menuFond = document.getElementsByClassName('smd-menu-fond');
+
+menuButton[0].addEventListener('click', function(){
+    menu[0].classList.add('smd-slide');
+    menu[0].classList.remove('smd-unslide');
+    menuFond[0].style.display = 'block';
+});
+
+menuFond[0].addEventListener('click', function(){
+    menu[0].classList.add('smd-unslide');
+    menu[0].classList.remove('smd-slide');
+    menuFond[0].style.display = 'none';
+});
+ 
+</script>

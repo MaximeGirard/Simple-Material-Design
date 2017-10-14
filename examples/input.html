@@ -1,0 +1,97 @@
+<!--Importation des polices-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--HTML-->
+
+<input type='text' placeholder='Input' class='smd-input' required>
+<input type='email' placeholder='Mail' class='smd-input' required>
+<input type='password' placeholder='Password' class='smd-input' required>
+
+<!--CSS-->
+<style>
+
+    :root {
+        --main-color: #2196F3;
+    }
+
+    body {
+        margin: 0px;
+        padding: 25px;
+    }
+
+    .smd-input {
+        font-family: 'Roboto', sans-serif;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .smd-input {
+        font-size: 1em;
+        margin: 10px 25px;
+        width: 200px;
+        display: block;
+        border: none;
+        padding: 10px 0;
+        padding-top: 20px; 
+        border-bottom: solid 1px var(--main-color);
+        transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, var(--main-color) 4%);
+        background-position: -200px 0;
+        background-size: 200px 100%;
+        background-repeat: no-repeat;
+    }
+
+    .smd-input:focus {
+        box-shadow: none;
+        outline: none;
+        background-position: 0 0;
+    }
+
+    .smd-input:valid {
+        transition: 0s;
+        border-bottom-color: #8BC34A;
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #8BC34A 4%);
+    }
+
+    .smd-input:invalid {
+        box-shadow: none;
+    }
+
+
+    .smd-input::placeholder {
+        color: gray;
+        font-size: 11px;
+        visibility: visible !important;
+        transition: 0.2s;
+    }
+
+    .smd-input::-moz-placeholder {
+        color: gray;
+        font-size: 11px;
+        visibility: visible !important;
+        transition: 0.2s;
+    }
+
+    .smd-input:-ms-input-placeholder {
+        color: gray;
+        font-size: 11px;
+        visibility: visible !important;
+        transition: 0.2s;
+    }
+
+    .smd-input:focus::placeholder {
+        transform: translateY(-20px);
+        color: var(--main-color);
+    }
+
+    .smd-input:focus::-moz-placeholder {
+        transform: translateY(-20px);
+        color: var(--main-color);
+    }
+
+    .smd-input:focus:-ms-input-placeholder {
+        transform: translateY(-20px);
+        color: var(--main-color);
+    }
+    
+</style>

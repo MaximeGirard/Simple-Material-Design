@@ -1,0 +1,123 @@
+<!--Importation des polices-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--HTML-->
+
+<button class='smd-simple-button'>Click Me !</button>
+<button class='smd-important-button'>Click Me !</button>
+<button class='smd-icon-button'><i class='material-icons'>add</i></button>
+<!--CSS-->
+<style>
+
+    :root {
+        --simple-button-text-color: #03A9F4;
+        --important-button-color: rgb(33, 33, 33);
+        --important-button-text-color: white;
+        --icon-button-color: rgb(33, 33, 33);
+        --icon-button-text-color: white;
+    }
+
+    body {
+        margin: 0px;
+        padding: 25px;
+    }
+
+    button {
+        margin: 25px;
+    }
+
+
+    a:focus, a:active, 
+    button::-moz-focus-inner,
+    input[type="reset"]::-moz-focus-inner,
+    input[type="button"]::-moz-focus-inner,
+    input[type="submit"]::-moz-focus-inner,
+    select::-moz-focus-inner,
+    input[type="file"] > input[type="button"]::-moz-focus-inner {
+        border: 0;
+        outline : 0;
+    }
+
+    .smd-simple-button {
+        color: var(--simple-button-text-color);
+        background-color: rgb(255, 255, 255);
+        padding: 7px 16px;
+        border-radius: 3px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        transition: 0.2s;
+    }
+
+    .smd-simple-button:hover {
+        background-color: rgba(167, 167, 167, 0.39);
+    }
+
+    .smd-simple-button:active {
+        background-color: rgba(167, 167, 167, 0.52);
+    }
+
+    .smd-important-button {
+        color: var(--important-button-text-color);
+        background-color:  var(--important-button-color);
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.26);
+        transition: 200ms;
+        padding: 7px 16px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+    }
+
+    .smd-important-button:hover {
+        opacity: 0.82;
+        box-shadow: 6px 7px 25px 0px rgba(0, 0, 0, 0.28);
+    }
+
+    .smd-important-button:active {
+        opacity: 0.85;
+        box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.3);
+        transform: scale(0.99);
+    }
+
+    .smd-icon-button {
+        color: var(--icon-button-text-color);
+        background-color:  var(--icon-button-color);
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.26);
+        transition: 200ms;
+        border-radius: 27px;
+        width: 54px;
+        height: 54px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+    }
+
+    .smd-icon-button:hover {
+        box-shadow: 6px 7px 25px 0px rgba(0, 0, 0, 0.28);
+        opacity: 0.82;
+    }
+
+    .smd-icon-button:active {
+        box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.3);
+        opacity: 0.85;
+        transform: scale(0.97);
+    }
+    
+
+</style>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Material Design</title>
+        <meta name='viewport' content='width=device-width'>
+        <meta charset='utf-8'>
+        <link href='ressources/simple-material-design.min.css' rel='stylesheet'>
+        <link href='examples/style.css' rel='stylesheet'>
+        <script src='ressources/simple-material-design.js'></script>
+    </head>
+
+    <body>
+        <!--Menu-->
+        <div class='smd-sidebar'>
+            <p><i class='smd-menu-button material-icons'>menu</i>
+                <span class='smd-menu-title'>Simple Material Design</span></p>
+        </div>
+        
+        <div class='smd-menu-fond'>
+        </div>
+        
+        <div class='smd-menu'>
+            <ul>
+                <li><a href='#whatis'>What is SMD ?</a></li>
+                <li><a href='#howto'>How to use SMD ?</a></li>
+                <li><a href='#doc'>Documentation</a></li>
+                        <li class='submenu'><a href='#docmenu'>Menu</a></li>
+                        <li class='submenu'><a href='#docinput'>Input</a></li>
+                        <li class='submenu'><a href='#docbutton'>Button</a></li>
+                        <li class='submenu'><a href='#docloader'>Loader</a></li>
+                <li><a href='https://github.com/MaximeGirard/Simple-Material-Design'>Download</a></li>
+                        
+            </ul>
+        </div>
+
+        <!--Presentation-->
+        <article>
+        <h1 class='smd-important-title' id='whatis'>What is Simple Material Design ?</h1>
+        <p class='smd-text'>
+            <em>Simple Material Design</em> is a library who contains some very basic and simple css rules to get Material Design elements in your website.
+            They are realy easy to use. Moreover, you can modify the css finger in the nose ʘ‿ʘ.
+        </p>
+
+        <!--How to use ?-->
+        <h1 class='smd-important-title' id='howto'>How to use Simple Material Design ?</h1>
+        <p class='smd-text'>
+            To use <em>Simple Material Design</em>, you just have to download the ressources files, include the include line in your html file and read this doc to know how to insert Material Design elements in your html page.
+            <br />
+            <strong>To include css and js:</strong>
+            <div class='code'>
+                &lt;link href='path/to/simple-material-design.css' rel='stylesheet'&gt;<br/ >
+                &lt;script src='path/to/simple-material-design.js'&gt;&lt;/script&gt;
+            </div>   
+            
+        </p>
+
+        <!--Doc-->
+        <h1 class='smd-important-title' id='doc'>Documentation</h1>
+        <!--Parameter-->
+            <h2 class='smd-title' id='docparam'>Parameter</h2>
+                <p class='smd-text'>
+                    Some elements have parameters like background color, etc... To modify them just setup them in the <em>:root</em> selector in another stylesheet. Make sure to put this stylesheet <strong>after</strong> the Simple Material Design include.
+                    <br />
+                    <strong>Exemple :</strong>
+                    <div class='code'>
+                        :root {<br />
+                            --parameter: value;<br />
+                        }
+                    </div>
+                </p>
+
+            <!--Doc Menu-->
+            <h2 class='smd-title' id='docmenu'>Menu</h2>
+                <p class='smd-text'>
+                    To make a menu like this who is on his page, <strong>do</strong>:
+                    <div class='code'>
+                    &lt;div class='smd-sidebar'&gt;<br />
+                    &lt;p&gt;&lt;i class='smd-menu-button material-icons'&gt;menu&lt;/i&gt;<br />
+                    &lt;span class='smd-menu-title'&gt;Insert Title Here&lt;/span&gt;&lt;/p&gt;<br />
+                    &lt;/div&gt;<br />
+                    <br />
+                    &lt;div class='smd-menu-fond'&gt;<br />
+                    &lt;/div&gt;<br />
+                    <br />
+                    &lt;div class='smd-menu'&gt;<br />
+                    &lt;ul&gt;<br />
+                    &lt;li&gt;Link 1&lt;/li&gt;<br />
+                    &lt;li&gt;Link 2&lt;/li&gt;<br />
+                    &lt;li&gt;Link 3&lt;/li&gt;<br />
+                    &lt;li&gt;Link 4&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br />
+                    &lt;/div&gt;
+                    </div>
+                
+                    <p class='smd-text'>
+                    You can modify these parameters :
+                    </p>
+                    
+                    <div class='code'>
+                    --menubar-color: #212121; //color of the menu bar<br />
+                    --menubar-text-color: white //color of the menu bar text;
+                    </div>
+                </p>
+
+            <!--Doc Input-->
+            <h2 class='smd-title' id ='docinput'>Input</h2>
+                <p class='smd-text'>
+                    Inputs look like that:
+                    <br />
+                    <br />
+                    <input type='text' placeholder='Input' class='smd-input' required> <!--exemple-->
+                    <br />
+                    <br />
+                    To get it, <strong>do:</strong>
+
+                    <div class='code'>
+                        &lt;input type='text' placeholder='Input' class='smd-input' required&gt;<br /> 
+                        //Change placeholder to change the label
+                    </div>
+
+                    <p class='smd-text'>
+                    You can modify this parameters :
+                    </p>
+
+                    <div class='code'>
+                        --input-color: #2196F3; //Change the general color of the input
+                    </div>
+                </p>
+
+            <h2 class='smd-title' id='docbutton'>Button</h2>
+
+                <p class='smd-text'>
+                    There are three differents button. <br />
+                    The first one is the simple. It look like that :<br /><br />
+                    <button class='smd-simple-button'>Click Me !</button> <!--exemple-->
+                    <br /><br />
+                    To get it, <strong>do:</strong>
+
+                    <div class='code'>
+                    &lt;button class='smd-simple-button'&gt;Click Me !&lt;/button&gt;
+                    </div>
+
+                    <p class='smd-text'>
+                    You can modify this parameters :
+                    </p>
+
+                        <div class='code'>
+                            --simple-button-text-color: #03A9F4;
+                        </div>
+
+                    </p>
+                    <br />
+                    <br />
+                    <p class='smd-text'>
+                        The second one is the important button. It look like that:<br /><br />
+                        <button class='smd-important-button'>Click Me !</button> <!--exemple-->
+                        <br /><br />
+                        To get it, <strong>do:</strong>
+
+                    <div class='code'>
+                    &lt;button class='smd-important-button'&gt;Click Me !&lt;/button&gt;
+                    </div>
+
+                    <p class='smd-text'>
+                    You can modify this parameters :
+                    </p>
+
+                    <div class='code'>
+                        --important-button-color: rgb(33, 33, 33); <br />
+                        --important-button-text-color: #03A9F4;
+                    </div>
+                </p>
+
+                <br />
+                <br />
+
+                <p class='smd-text'>
+                    The last one is the icon button. It look like that:<br /><br />
+                    <button class='smd-icon-button'><i class='material-icons'>add</i></button> <!--exemple-->
+                    <br /><br />
+                    To change the icon, you need to change the test in the &lt;i&gt; tag. <br />
+                    Just read <a href = "https://www.material.io/icons">The Material Design Icon Documentation</a> to see differents icons.<br />
+                    <br />
+                    To get the button, <strong>do:</strong>
+
+                    <div class='code'>
+                    &lt;button class='smd-icon-button'&gt;&lt;i class='material-icons'&gt;add&lt;/i&gt;&lt;/button&gt;
+                    </div>
+
+                    <p class='smd-text'>
+                    You can modify these parameters :
+                    </p>
+
+                    <div class='code'>
+                            --icon-button-color: rgb(33, 33, 33); <br />
+                            --icon-button-text-color: white;
+                    </div>
+                    </p>
+
+                <h2 class='smd-title' id='docloader'>Loaders</h2>
+
+                    <p class='smd-text'>
+                        there are two differents loaders in this library. <br />
+                        The first one is a spinning loader:<br />
+                        <div class='smd-loader-1'></div> <!--exemple-->
+                        <br />
+                    
+                        <p class='smd-text'>
+                        To get it, <strong>do:</strong>
+                        </p>
+
+                    <div class='code'>
+                    &lt;div class='smd-loader-1'&gt;&lt;/div&gt;
+                    </div>
+
+                    <p class='smd-text'>
+                    You can modify these parameters :
+                    </p>
+
+                    <div class='code'>
+                            --loader-1-color: #3498db;
+                            --loader-1-size: 120px;
+                    </div>
+
+                    </p>
+
+                    <p class='smd-text'>
+                            The second one is a loading bar:<br />
+                            <div class='smd-loader-2'><div class='smd-loader-2-bar'></div></div> <!--exemple-->
+                            <br /><br />
+                            To get it, <strong>do:</strong>
+                        
+                    <div class='code'>
+                    &lt;div class='smd-loader-2'&gt;&lt;div class='smd-loader-2-bar'&gt;&lt;/div&gt;&lt;/div&gt;
+                    </div>
+                    
+                    <p class='smd-text'>
+                    You can modify these parameters :
+                    </p>
+                    
+                    <div class='code'>
+                            --loader-2-color: #3498db; <br />
+                            --loader-2-size: 120px;
+                    </div>
+                    </p>
+
+        </article>
+        <footer>
+            <p class='smd-text'>
+            This project is under <a href='LICENSE'>MIT licence</a>. Maxime Girard, 2017 ©
+            </p>
+        </footer>
+    </body>
+</html>

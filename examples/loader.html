@@ -1,0 +1,64 @@
+<!--Importation des polices-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--HTML-->
+
+<div class='smd-loader-1'>
+</div>
+<div class='smd-loader-2'>
+<div class='smd-loader-2-bar'></div>
+</div>
+
+</div>
+<!--CSS-->
+<style>
+
+    :root {
+        --loader-1-color: #3498db;
+        --loader-1-size: 120px;
+        --loader-2-color: #212121;
+        --loader-2-size: 200px;
+    }
+
+    body {
+        margin: 0px;
+        padding: 25px;
+    }
+
+    .smd-loader-1 {
+    border: 6px solid #f3f3f3; 
+    border-top: 6px solid var(--loader-1-color);
+    border-radius: 50%;
+    width: var(--loader-1-size);
+    height: var(--loader-1-size);
+    animation: spin 1.4s cubic-bezier(.02,.48,.61,.15) infinite;
+    margin: 25px;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .smd-loader-2 {
+        width: var(--loader-2-size);
+        height: 6px;
+        margin: 25px;
+    }
+
+    @keyframes loading {
+        0% { width: 0%; }
+        100% { width: 100% }
+    }
+
+    .smd-loader-2-bar {
+        width: 0;
+        height: 6px;
+        background-color: var(--loader-2-color);
+        animation: loading 5s cubic-bezier(.02,.48,.61,.15) infinite;
+    }
+
+
+
+</style>
