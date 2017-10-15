@@ -28,6 +28,10 @@
                         <li class='submenu'><a href='#docinput'>Input</a></li>
                         <li class='submenu'><a href='#docbutton'>Button</a></li>
                         <li class='submenu'><a href='#docloader'>Loader</a></li>
+                        <li class='submenu'><a href='#doccard'>Cards</a></li>
+                        <li class='submenu'><a href='#doclist'>Lists</a></li>
+                        <li class='submenu'><a href='#doccheckbox'>Checkbox</a></li>
+                        <li class='submenu'><a href='#docradio'>Radio</a></li>
                 <li><a href='https://github.com/MaximeGirard/Simple-Material-Design'>Download</a></li>
                         
             </ul>
@@ -38,7 +42,7 @@
         <h1 class='smd-important-title' id='whatis'>What is Simple Material Design ?</h1>
         <p class='smd-text'>
             <em>Simple Material Design</em> is a library who contains some very basic and simple css rules to get Material Design elements in your website.
-            They are realy easy to use. Moreover, you can modify the css finger in the nose ʘ‿ʘ.
+            They are realy easy to use. Moreover, you can modify the css finger in the nose ;).
         </p>
 
         <!--How to use ?-->
@@ -200,7 +204,7 @@
                 <h2 class='smd-title' id='docloader'>Loaders</h2>
 
                     <p class='smd-text'>
-                        there are two differents loaders in this library. <br />
+                        There are two differents loaders in this library. <br />
                         The first one is a spinning loader:<br />
                         <div class='smd-loader-1'></div> <!--exemple-->
                         <br />
@@ -218,7 +222,7 @@
                     </p>
 
                     <div class='code'>
-                            --loader-1-color: #3498db;
+                            --loader-1-color: #3498db;<br />
                             --loader-1-size: 120px;
                     </div>
 
@@ -243,6 +247,144 @@
                             --loader-2-size: 120px;
                     </div>
                     </p>
+                
+                    <h2 class='smd-title' id='doccard'>Cards</h2>
+                    
+                        <p class='smd-text'>
+                            You can use cards for forms, profile info or anything. <br />
+                            That is a card with form elements inside:<br /><br />
+                                <div class='smd-card example-card'>
+                                    <img src='https://cdn.pixabay.com/photo/2016/03/09/15/29/laptop-1246672_960_720.jpg' alt='exemple of card image'>
+                                    <div class='smd-card-components'>
+                                        <h1 class='smd-title'>Card - Form</h1>
+                                        <input type='text' placeholder="email" class='smd-input'>
+                                        <button class='smd-simple-button'>Send</button>
+                                    </div>
+                                </div> <!--exemple-->
+                                <br />
+                            
+                                <p class='smd-text'>
+                                To get it, <strong>do:</strong>
+                                </p>
+        
+                            <div class='code'>
+                                &lt;div class='smd-card'&gt;<br />
+                                &emsp;&emsp;&lt;img src='path/to/image' alt='image in card'&gt;<br />
+                                &emsp;&emsp;&lt;div class='smd-card-components'&gt;<br />
+                                &emsp;&emsp;&emsp;&emsp;//put here whatever you want<br />
+                                &emsp;&emsp;&lt;/div&gt;<br />
+                                &lt;/div&gt;    
+                            </div>
+        
+                            <p class='smd-text'>
+                            You can modify these parameters :
+                            </p>
+        
+                            <div class='code'>
+                                    --card-size: 120px;
+                            </div>
+                        </p>
+
+                    <h2 class='smd-title' id='doclist'>List</h2>
+                    
+                        <p class='smd-text'>
+                            Use list for a ranking, a list of link... <br />
+                            Styled list looks like that:<br /><br />
+                            <ul class='smd-list'>   <!--exemple-->
+                                <li>1. Html</li>
+                                <li>2. Css</li>
+                                <li>3. Javascript</li>
+                                <li>4. Php</li>
+                            </ul> 
+                                <br />
+                            
+                                <p class='smd-text'>
+                                To get it, <strong>do:</strong>
+                                </p>
+        
+                            <div class='code'>
+                                &lt;ul class='smd-list'&gt;<br />
+                                &emsp;&emsp;&lt;li&gt;Element 1&lt;/li&gt;<br />
+                                &emsp;&emsp;&lt;li&gt;Element 2&lt;/li&gt;<br />
+                                &emsp;&emsp;&lt;li&gt;Element 3&lt;/li&gt;<br />
+                                &emsp;&emsp;&lt;li&gt;Element 4&lt;/li&gt;<br />
+                                &lt;/ul&gt;
+                            </div>
+                        </p>
+                    
+                    <h2 class='smd-title' id='doccheckbox'>Checkbox Inputs</h2>
+                    
+                        <p class='smd-text'>
+                            Like classic checkbox but more cool ;)
+                            <br /><br />
+                            <label class="smd-checkbox-input-container">Checkbox Input 1
+                                <input type="checkbox" checked="checked" name="checkbox">
+                                <span class="smd-checkbox-input"></span>
+                            </label>
+                            
+                            <label class="smd-checkbox-input-container">Checkbox Input 2
+                                <input type="checkbox" name="checkbox">
+                                <span class="smd-checkbox-input"></span>
+                            </label><!--exemple-->
+                                <br />
+                            
+                                <p class='smd-text'>
+                                To get it, <strong>do:</strong>
+                                </p>
+        
+                            <div class='code'>
+                                &lt;label class="smd-checkbox-input-container"&gt;Checkbox Input<br />
+                                &lt;input type="checkbox" name="checkbox"&gt;<br />
+                                &lt;span class="smd-checkbox-input"&gt;&lt;/span&gt;<br />
+                                &lt;/label&gt;
+                            </div>
+        
+                            <p class='smd-text'>
+                            You can modify these parameters :
+                            </p>
+        
+                            <div class='code'>
+                                    --checkbox-input-color: #2196F3;
+                            </div>
+                        </p>
+                        
+                    <h2 class='smd-title' id='docradio'>Radio Inputs</h2>
+                    
+                        <p class='smd-text'>
+                            At the opposite of the checkbox, with the radio button, you can only select one choice.
+                            <br /><br />
+                            <label class="smd-radio-input-container">Radio Input 1
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="smd-radio-input"></span>
+                            </label>
+                            
+                            <label class="smd-radio-input-container">Radio Input 2
+                                <input type="radio" name="radio">
+                                <span class="smd-radio-input"></span>
+                            </label><!--exemple-->
+                                <br />
+                            
+                                <p class='smd-text'>
+                                To get it, <strong>do:</strong>
+                                </p>
+        
+                            <div class='code'>
+                                &lt;label class="smd-radio-input-container"&gt;Radio Input<br />
+                                &lt;input type="radio" name="radio"&gt;<br />
+                                &lt;span class="smd-radio-input"&gt;&lt;/span&gt;<br />
+                                &lt;/label&gt;
+                            </div>
+        
+                            <p class='smd-text'>
+                            You can modify these parameters :
+                            </p>
+        
+                            <div class='code'>
+                                    --radio-input-color: #2196F3;
+                            </div>
+                        </p>
+    
+        
 
         </article>
         <footer>
