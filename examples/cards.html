@@ -1,0 +1,51 @@
+<!--Importation des polices-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--HTML-->
+
+<div class='smd-card'>
+<img src='https://cdn.pixabay.com/photo/2016/03/09/15/29/laptop-1246672_960_720.jpg' alt='exemple of card image'>
+<div class='smd-card-components'>
+    <h1>Card</h1>
+    <input type='text' placeholder="input" >
+    <p >Put here yout text/input/media...</p>
+    <button>Action</button>
+</div>
+</div>
+
+<!--CSS-->
+<style>
+
+    :root {
+        --card-size : 300px;
+    }
+
+    body {
+        margin: 0px;
+        padding: 25px;
+    }
+
+    .smd-card {
+        width: var(--card-size);
+        border-radius: 3px;
+        border: 1px solid rgba(128, 128, 128, 0.25);
+        box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .smd-card img{
+        width: var(--card-size);
+        height: auto;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .smd-card-components {
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+</style>
